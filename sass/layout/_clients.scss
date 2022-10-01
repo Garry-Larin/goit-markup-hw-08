@@ -1,0 +1,29 @@
+.clients {
+  @extend %section;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item-link {
+  @include flexCenter(flex, center, center);
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  transition: fill var(--animation);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+}

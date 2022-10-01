@@ -1,0 +1,29 @@
+.hero__btn {
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: color var(--animation), background-color var(--animation),
+    box-shadow var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: $bg-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+  }
+}

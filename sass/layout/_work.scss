@@ -1,0 +1,43 @@
+.work-list {
+  @extend %section;
+  padding-top: 0;
+}
+
+.work-list-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.work-list-item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.work-overlay {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.job-title {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}

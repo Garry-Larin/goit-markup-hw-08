@@ -1,0 +1,9 @@
+.hero-btn-pf-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.hero-btn-list-pf:not(:nth-child(5n)) {
+  margin-right: 8px;
+}

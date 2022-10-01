@@ -1,0 +1,53 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address {
+  line-height: 1.7;
+  color: var(--background-color);
+}
+
+.footer-contact-item:not(:nth-child(3n)) {
+  margin-bottom: 9px;
+}
+
+.footer-lister {
+  @include flexCenter(flex, space-between, baseline);
+}
+
+.common-footer {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0, 87;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color);
+  margin-bottom: 20px;
+}
+
+.social-list-link-footer {
+  @include flexCenter(flex, center, center);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
+}
+
+.social-list-link-footer:hover .social-list-icon,
+.social-list-link-footer:focus .social-list-icon {
+  fill: var(--background-color);
+}
+
+.social-list-icon-footer {
+  fill: var(--background-color);
+}
