@@ -9,6 +9,8 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   transition: border-color var(--animation);
 }
 
@@ -23,7 +25,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 4px;
@@ -34,7 +36,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
@@ -53,7 +55,7 @@
 .input-icon {
   position: absolute;
   top: 50%;
-  left: 15px;
+  left: 12px;
   transform: translate(0, -50%);
   transition: fill var(--animation);
 
@@ -80,9 +82,9 @@
 
 .modal-form-check-desk {
   @include flexCenter(flex, center, center);
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.16;
+  margin-bottom: 31px;
   letter-spacing: 0.03em;
   color: var(--section-text);
 
@@ -111,7 +113,7 @@
   font-weight: 500;
   border: none;
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px 52px;
   font-size: 16px;
   line-height: 1.9;
   display: flex;
