@@ -22,6 +22,8 @@
 .work-examples, .team, .clients, .work-list, .benefits, .hero, .top-header {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul,
@@ -120,7 +122,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero__mobile.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero__desktop.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -163,20 +165,44 @@ body {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .benefits__item {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .benefits__item {
+    width: 354px;
+  }
+}
+
 .benefits__section {
   padding-top: 60px;
   padding-bottom: 45px;
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 768px) {
+  .benefits__section {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .benefits__title {
-  width: 100%;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--text-color);
   margin-bottom: 10px;
+}
+@media screen and (min-width: 480px) {
+  .benefits__title {
+    width: 100%;
+    display: block;
+  }
 }
 
 .benefits__list {
@@ -186,7 +212,9 @@ body {
 }
 @media screen and (min-width: 480px) {
   .benefits__list {
-    flex-direction: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 30px;
   }
 }
@@ -214,14 +242,6 @@ body {
   width: 100%;
   margin-bottom: 30px;
   line-height: 1.7;
-}
-@media screen and (min-width: 480px) {
-  .benefits__section-description {
-    width: 354px;
-    height: 120px;
-    margin-bottom: 0;
-    padding: 0;
-  }
 }
 
 .work-list {
