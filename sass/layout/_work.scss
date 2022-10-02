@@ -1,3 +1,15 @@
+@media screen and (max-width: 1200px) {
+  .work-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-list {
+    display: block;
+  }
+}
+
 .work-list {
   @extend %section;
   padding-top: 0;
