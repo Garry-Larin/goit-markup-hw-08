@@ -419,7 +419,6 @@ body {
 @media screen and (min-width: 768px) {
   .team-cards {
     width: calc((100% - 30px) / 2);
-    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1012,7 +1011,6 @@ body {
 @media screen and (min-width: 1200px) {
   .contact__item:not(:last-child) {
     margin-right: 30px;
-    margin-right: 50px;
     margin-bottom: 0;
   }
 }
