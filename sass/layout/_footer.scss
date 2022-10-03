@@ -1,7 +1,6 @@
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @extend %section;
 }
 
 .address {
@@ -14,7 +13,10 @@
 }
 
 .footer-lister {
-  @include flexCenter(flex, space-between, baseline);
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .common-footer {
@@ -27,6 +29,7 @@
   text-transform: uppercase;
   color: var(--background-color);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .social-list-link-footer {
@@ -50,4 +53,53 @@
 
 .social-list-icon-footer {
   fill: var(--background-color);
+}
+
+.logo-footer {
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+
+.address {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-footer {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
+}
+
+.contact-footer-tel {
+  margin-bottom: 60px;
+}
+
+.social-list-footer {
+  margin-bottom: 60px;
+}
+
+.adress-social-pak {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
+}
+
+.adress-footer {
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }

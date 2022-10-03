@@ -46,10 +46,10 @@
             <use href="./images/sprite.svg#icon-burger"></use>
           </svg>
         </button>
-        <ul class="list containers contact">
+        <ul class="list contact">
           <li class="contact__item">
             <a class="contact__link link" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16px" height="12px">
+              <svg class="contact__icon" width="14px" height="10px">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -57,7 +57,7 @@
           </li>
           <li class="contact__item">
             <a class="contact__link link" href="tel:+380961111111">
-              <svg class="contact__icon" width="10px" height="16px">
+              <svg class="contact__icon" width="10px" height="14px">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -239,6 +239,7 @@
           <ul class="list team-list">
             <li class="team-cards">
               <img
+              srcset="./images/master-demyanenko-1-mobile.jpg 1x, ./images/master-demyanenko-1-mobile@2x.jpg 2x"
                 src="./images/master-demyanenko-1-mobile.jpg"
                 alt="Игорь Демьяненко"
                 width="100%"
@@ -281,6 +282,7 @@
             </li>
             <li class="team-cards">
               <img
+              srcset="./images/master-repina-2-mobile.jpg 1x, ./images/master-repina-2-mobile@2x.jpg 2x"
                 src="./images/master-repina-2-mobile.jpg"
                 alt="Ольга Репина"
                 width="100%"
@@ -323,6 +325,7 @@
             </li>
             <li class="team-cards">
               <img
+              srcset="./images/master-tarasov-3-mobile.jpg 1x, ./images/master-tarasov-3-mobile@2x.jpg 2x"
                 src="./images/master-tarasov-3-mobile.jpg"
                 alt="Николай Тарасов"
                 width="100%"
@@ -365,6 +368,7 @@
             </li>
             <li class="team-cards">
               <img
+              srcset="./images/master-yermakov-4-mobile.jpg 1x, ./images/master-yermakov-4-mobile@2x.jpg 2x"
                 src="./images/master-yermakov-4-mobile.jpg"
                 alt="Михаил Ермаков"
                 width="100%"
@@ -410,9 +414,9 @@
       </section>
     </main>
 
-    <!-- <section class="clients">
+    <section class="clients">
       <div class="container">
-        <h2 class="section-title team-title">Постійні клієнти</h2>
+        <h2 class="section-title">Постійні клієнти</h2>
         <ul class="clients-list list">
           <li class="clients-item">
             <a class="clients-item-link" href="">
@@ -476,11 +480,11 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-lister container">
-        <div class="adress-footer">
+        <div class="adress-social-pak"><div class="adress-footer">
           <a class="logo link logo-footer" href="./index.html"
             >Web<span class="logo logo-white">Studio</span>
           </a>
@@ -503,7 +507,7 @@
               >
             </li>
             <li class="footer-contact-item">
-              <a class="contact__link link" href="tel:+380991111111"
+              <a class="contact__link link contact-footer contact-footer-tel" href="tel:+380991111111"
                 >+38 099 111 11 11</a
               >
             </li>
@@ -511,7 +515,7 @@
         </div>
         <div class="social-footer">
           <p class="common-footer">ПРИЄДНУЙТЕСЬ</p>
-          <ul class="social-list list">
+          <ul class="social-list-footer social-list list">
             <li class="cosial-list-item">
               <a href="" class="social-list-link-footer">
                 <svg class="social-list-icon-footer" width="20px" height="20px">
@@ -541,7 +545,8 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div></div>
+        
         <div class="modal-form-wrapper">
           <form class="subscribe-mail">
             <p class="subscribe-priziv">Підпишіться на розсилку</p>
@@ -563,7 +568,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
