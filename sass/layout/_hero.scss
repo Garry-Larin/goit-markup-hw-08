@@ -9,6 +9,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 768px),
     screen and (min-resolution: 192dpi) and (max-width: 768px),
@@ -64,6 +66,8 @@
 }
 
 .hero__title {
+  font-weight: 900;
+  letter-spacing: 0.06em;
   font-size: 26px;
   line-height: 1.61;
   text-align: center;

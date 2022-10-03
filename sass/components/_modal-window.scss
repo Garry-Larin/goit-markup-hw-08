@@ -7,6 +7,8 @@
   height: 609px;
   background-color: var(--background-color);
   padding: 40px;
+  width: calc(100% - 30px);
+  max-width: 450px;
 }
 
 .modal-close-btn {

@@ -8,10 +8,21 @@
   justify-content: center;
 }
 
+.clients-item {
+  width: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
+}
+
 .clients-item-link {
   @include flexCenter(flex, center, center);
 
-  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
