@@ -25,12 +25,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 1200px) {
-  .work-examples, .footer, .team, .clients, .work-list, .benefits, .hero, .top-header {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
 
 ul,
 ol {
@@ -213,6 +207,12 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .benefits__section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .benefits__title {
   font-size: 14px;
@@ -273,6 +273,11 @@ body {
   line-height: 1.7;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .benefits__item:not(:last-child) {
     margin-bottom: 0;
@@ -427,12 +432,10 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .team-cards:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.team-cards:not(:last-child) {
+  margin-bottom: 30px;
 }
-@media screen and (max-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .team-cards:not(:last-child) {
     margin-bottom: 0;
   }
@@ -987,15 +990,16 @@ body {
 .contact__link {
   display: flex;
   align-items: center;
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   color: var(--section-text);
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.7;
   letter-spacing: 0.02em;
   transition: color var(--animation);
 }
 .contact__link:hover, .contact__link:focus {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--accent-color);
 }
 
 .contact__icon {
