@@ -987,6 +987,7 @@ body {
 }
 .contact__link {
   display: flex;
+  align-items: center;
   font-size: 14px;
   color: var(--section-text);
   font-weight: 500;
