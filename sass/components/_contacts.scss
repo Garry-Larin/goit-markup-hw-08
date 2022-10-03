@@ -17,7 +17,6 @@
   display: flex;
   font-size: 14px;
   color: var(--section-text);
-  font-size: 12px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -35,15 +34,14 @@
 }
 
 .contact__item:not(:last-child) {
-  margin-bottom: 10px;
-
   @media screen and (min-width: 768px) {
-    margin-right: 50px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-right: 30px;
+    margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 
