@@ -45,16 +45,12 @@
 .team-cards:not(:last-child) {
   @media screen and (max-width: 768px) {
     margin-bottom: 30px;
+
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
 }
-
-// .team-cards:not(:nth-child(4n)) {
-//   margin-right: 30px;
-
-//   @media screen and (min-width: 768px) {
-//     margin-bottom: 0px;
-//   }
-// }
 
 .team-member {
   font-weight: 500;

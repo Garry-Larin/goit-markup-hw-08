@@ -65,6 +65,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .list {
   list-style: none;
 }
@@ -269,6 +273,12 @@ body {
   line-height: 1.7;
 }
 
+@media screen and (min-width: 1200px) {
+  .benefits__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .work-list {
     display: none;
@@ -423,6 +433,11 @@ body {
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 768px) and (max-width: 1200px) {
+  .team-cards:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 
 .team-member {
   font-weight: 500;
@@ -446,6 +461,9 @@ body {
   margin-bottom: 9px;
 }
 
+.footer-lister {
+  align-items: baseline;
+}
 @media screen and (min-width: 1200px) {
   .footer-lister {
     display: flex;
@@ -515,14 +533,6 @@ body {
   }
 }
 
-.contact-footer-tel {
-  margin-bottom: 60px;
-}
-
-.social-list-footer {
-  margin-bottom: 60px;
-}
-
 @media screen and (min-width: 768px) {
   .adress-social-pak {
     display: flex;
@@ -538,6 +548,17 @@ body {
 @media screen and (min-width: 1200px) {
   .adress-footer {
     margin-right: 70px;
+    margin-bottom: 60px;
+    margin-bottom: 0;
+  }
+}
+
+.social-footer {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .social-footer {
+    margin-bottom: 0;
   }
 }
 
@@ -947,11 +968,13 @@ body {
 @media screen and (min-width: 1200px) {
   .section-title {
     margin-bottom: 50px;
+    font-size: 44px;
   }
 }
 
 .contact {
   display: none;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -982,25 +1005,27 @@ body {
 .contact__item:not(:last-child) {
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .contact__item:not(:last-child) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .contact {
     flex-direction: row;
   }
 }
-.contact__item:not(:last-child) {
-  padding-bottom: 0;
-}
-
-.contact__item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .menu__list-container {
   display: flex;
   align-items: center;
   padding: 0;
-  margin-right: 96px;
   display: none;
 }
 

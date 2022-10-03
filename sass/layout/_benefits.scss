@@ -76,6 +76,12 @@
   line-height: 1.7;
 }
 
+.benefits__item:not(:last-child) {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
 // .benefits {
 //   @extend %section;
 // }
